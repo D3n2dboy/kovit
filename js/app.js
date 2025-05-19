@@ -471,6 +471,38 @@
                 gap: 50
             });
         }));
+        function animateCounter(el, duration = 2e3) {
+            const target = +el.getAttribute("data-target");
+            const stepTime = Math.max(Math.floor(duration / target), 20);
+            let current = 0;
+            const counterInterval = setInterval((() => {
+                current += 1;
+                el.textContent = current;
+                if (current >= target) {
+                    el.textContent = target;
+                    clearInterval(counterInterval);
+                }
+            }), stepTime);
+        }
+        document.addEventListener("DOMContentLoaded", (() => {
+            const counters = document.querySelectorAll(".counter");
+            counters.forEach((counter => {
+                const parent = counter.closest(".count-visible");
+                if (parent) animateCounter(counter);
+            }));
+        }));
+        const counters = document.querySelectorAll(".counter");
+        const observer = new IntersectionObserver(((entries, observer) => {
+            entries.forEach((entry => {
+                if (entry.isIntersecting && entry.target.closest(".count-visible")) {
+                    animateCounter(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            }));
+        }), {
+            threshold: .6
+        });
+        counters.forEach((counter => observer.observe(counter)));
         window["FLS"] = flase;
         isWebp();
     })();

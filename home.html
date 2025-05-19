@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250519153104">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250519221252">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -73,16 +73,16 @@
 						</div>
 					</div>
 					<div class="preview-stiker__image-ibg">
-						<div class="preview__decor decor-circle circle-yellow"></div>
-						<div class="preview__decor decor-circle circle-blue"></div>
-						<div class="preview__decor decor-circle circle-red"></div>
+						<div data-prlx-mouse class="preview__decor decor-circle circle-yellow"></div>
+						<div data-prlx-mouse class="preview__decor decor-circle circle-blue"></div>
+						<div data-prlx-mouse class="preview__decor decor-circle circle-red"></div>
 						<picture><source data-srcset="img/preview/sticker-man-notebook.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="preview__icon-sticker" data-src="img/preview/sticker-man-notebook.png" alt="man-notebook"></picture>
 					</div>
 				</div>
 			</section>
 
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?_v=20250519153104"></script>
-			<script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js?_v=20250519153104"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?_v=20250519221252"></script>
+			<script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js?_v=20250519221252"></script>
 
 			<div class="running-line">
 				<div class="marquee">
@@ -121,19 +121,25 @@
 
 			<div class="plus">
 				<ul class="plus__items">
-					<li class="plus__item">
-						<div class="plus__number">6+</div>
+					<li class="plus__item ">
+						<div class="plus__number counter-block count-visible">
+							<span class="counter" data-target="6">0</span>+
+						</div>
 						<p class="plus__text">Опыта работы с бизнесом</p>
 					</li>
 
 					<li class="plus__item plus__item_center">
-						<div class="plus__number">50+</div>
+						<div class="plus__number counter-block count-visible">
+							<span class="counter" data-target="50"></span>+
+						</div>
 						<p class="plus__text">Кейсов оптимизации
 							Айти-процессов</p>
 					</li>
 
 					<li class="plus__item">
-						<div class="plus__number">90+</div>
+						<div class="plus__number counter-block count-visible">
+							<span class="counter" data-target="90"></span>+
+						</div>
 						<p class="plus__text">SLA. Гарантии
 							качества IT-услуг.</p>
 					</li>
@@ -215,19 +221,24 @@
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__body">
+					<div class="footer__header">
 
-					<div class="footer__stiker">
-						<div class="footer__image-ibg"><picture><source data-srcset="img/footer/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/footer/01.png" alt=""></picture></div>
-					</div>
+						<div class="footer__image-ibg"><picture><source data-srcset="img/footer/sticker-boy.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/footer/sticker-boy.png" alt=""></picture></div>
+						<div class="footer-follow__image-ibg"><picture><source data-srcset="img/footer/follow.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/footer/follow.png" alt=""></picture></div>
 
-					<div class="footer__right">
-						<div class="footer__items">
-							<div class="footer__title">Контакты</div>
-							<a href="#" class="footer__link">8 495 177 12 65</a>
-							<a href="#" class="footer__link">kovi@dymitriko.ru</a>
+
+						<div class="footer__right">
+							<div class="footer__items">
+								<div class="footer__title">Контакты</div>
+								<a href="#" class="footer__link">8 495 177 12 65</a>
+								<a href="#" class="footer__link">kovi@dymitriko.ru</a>
+							</div>
+
+							<div class="footer__partners">
+								<picture><source data-srcset="img/footer/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/footer/02.png" alt="02"></picture>
+							</div>
 						</div>
 					</div>
-
 
 					<div class="footer__rights">
 						<div class="footer__text">
@@ -253,7 +264,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20250519153104"></script>
+	<script src="js/app.min.js?_v=20250519221252"></script>
 
 </body>
 
