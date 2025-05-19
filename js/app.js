@@ -471,6 +471,23 @@
                 gap: 50
             });
         }));
+        $((function() {
+            $(".marquee-right").marquee({
+                duration: 3e4,
+                direction: "right",
+                startVisible: true,
+                delayBeforeStart: 0,
+                gap: 50
+            });
+        }));
+        $((function() {
+            $(".marquee-left").marquee({
+                duration: 3e4,
+                startVisible: true,
+                delayBeforeStart: 0,
+                gap: 50
+            });
+        }));
         function animateCounter(el, duration = 2e3) {
             const target = +el.getAttribute("data-target");
             const stepTime = Math.max(Math.floor(duration / target), 20);

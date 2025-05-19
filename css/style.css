@@ -1097,6 +1097,10 @@ body {
   padding: 3.125rem 0;
 }
 
+.realization__container:not(:last-child) {
+  margin-bottom: 3.4375rem;
+}
+
 .realization__title:not(:last-child) {
   margin-bottom: 4.375rem;
 }
