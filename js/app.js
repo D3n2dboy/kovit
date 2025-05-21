@@ -476,6 +476,7 @@
                 duration: 3e4,
                 direction: "right",
                 startVisible: true,
+                duplicated: true,
                 delayBeforeStart: 0,
                 gap: 50
             });
@@ -484,6 +485,7 @@
             $(".marquee-left").marquee({
                 duration: 3e4,
                 startVisible: true,
+                duplicated: true,
                 delayBeforeStart: 0,
                 gap: 50
             });
